@@ -1,0 +1,28 @@
+.keep{
+  border:solid peru 3px;
+  padding: 4em 0;
+  &__pc_mobile{
+    max-width: 100%;
+    min-width: 100%;
+    margin: 3em 0;
+  }
+  &__items{
+   //@error border:solid 2px red;
+    &__articles{
+    
+       // border:solid blue 2px;
+       
+        &__item{
+          //border: solid 2px yellowgreen;
+          margin: 0em 0;
+          padding: 0 0 2em 0;
+        }
+    
+    }
+  }
+
+}
+
+
+
+
