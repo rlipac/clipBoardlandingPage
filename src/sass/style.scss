@@ -40,6 +40,8 @@ The designs were created to the following widths:
 
 @import './landing.scss';
 @import './keep.scss';
+@import './acces.scss';
+@import './workflow.scss';
 
 
 
@@ -114,6 +116,13 @@ The designs were created to the following widths:
        
     
       }
+      &__workflow{
+        @include title;
+        font-size: 1.1em;
+        display: block;
+        margin: auto;
+       // border:solid 2px red;
+      }
       
     }
     .copy{
@@ -135,18 +144,28 @@ The designs were created to the following widths:
         }
       }
 
-
+      .copy{
+        &__p{
+          &__workflow{
+            @include copy;
+            text-align: center;
+            font-size: em;
+           // border:solid 2px black;
+    
+          }
+        }
+      }
 
     
 /////////////////////////////////////////////
 
-@media (min-width: 500px){
+@media (min-width: 768px){
   .main{
     display: block;
     margin: auto;
     min-width: 100vw;
     max-width: 100vw;
-    border:solid 3px black;
+//border:solid 3px black;
   }
   .wapper{
     margin:0em 0em;
@@ -193,8 +212,15 @@ The designs were created to the following widths:
       @include title;
       text-align: left;
       font-size: 1.45em;
-     // border:solid 2px red;
+     
   
+    }
+    &__workflow{
+      @include title;
+      font-size: 1.35em;
+      display: block;
+      margin: auto;
+     // border:solid 2px red;
     }
     
   }
@@ -214,13 +240,27 @@ The designs were created to the following widths:
         font-size: 1em;
         padding:0 .5em;
        // border:solid 2px blue;
+      
       }
+     
      
       }
     }
+
+    .copy{
+      &__p{
+        &__workflow{
+          @include copy;
+          text-align: center;
+          font-size: 1em;
+         // border:solid 2px black;
+  
+        }
+      }
+    }
      .boton{
-        border:solid yellowgreen 2px;
-        border: blue solid 3px;
+        // border:solid yellowgreen 2px;
+        // border: blue solid 3px;
         padding: 2em 25em 5em 25em;
         display: flex;
         justify-content: space-between;

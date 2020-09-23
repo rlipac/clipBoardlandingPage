@@ -41,7 +41,7 @@ The designs were created to the following widths:
 }
 .landing__fondo {
   background: url("../../public/images/bg-header-mobile.png") center no-repeat;
-  background-size: 499px;
+  background-size: 767px;
   box-shadow: 0px -20px 20px inset #fafafa;
 }
 .landing__fondo__logo {
@@ -54,7 +54,7 @@ The designs were created to the following widths:
   margin: 1em 0;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 768px) {
   .landing {
     display: block;
   }
@@ -78,6 +78,7 @@ The designs were created to the following widths:
   }
 }
 .keep {
+  padding: 3em 0;
   padding: 4em 0;
 }
 .keep__mobile {
@@ -93,7 +94,7 @@ The designs were created to the following widths:
   padding: 0 0 2em 0;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 768px) {
   .keep {
     padding: 1em 0;
     display: block;
@@ -125,6 +126,87 @@ The designs were created to the following widths:
     margin: 5em 0;
     padding: 0 0 0 2em;
     width: 60%;
+  }
+}
+.wapper2 {
+  margin: 0 1.6em;
+}
+
+.images {
+  display: block;
+  margin: auto;
+  padding: 3em 0;
+}
+.images__large {
+  display: none;
+}
+.images__small {
+  padding: 0;
+  display: block;
+  margin: auto;
+  width: 97%;
+}
+
+@media (min-width: 7680px) {
+  .acces-clipboard {
+    padding: 3em;
+  }
+
+  .images__small {
+    display: none;
+  }
+  .images__large {
+    padding: 0;
+    display: block;
+    margin: auto;
+    width: 97%;
+  }
+}
+.items-images {
+  display: block;
+  margin: auto;
+  padding: 3em 0;
+}
+
+.workflow-article {
+  text-align: center;
+  padding: 0 1.6em;
+}
+
+@media (min-width: 768px) {
+  .workflow {
+    padding: 3em 0;
+  }
+
+  .container {
+    display: block;
+    margin: auto;
+  }
+
+  .item-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .list-item {
+    padding: 0 12vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .items {
+    width: 25vw;
+    margin: 2em 1em;
+  }
+
+  .logos-items {
+    width: 14vw;
+    margin: 2em 0;
+  }
+
+  .workflow-article {
+    text-align: center;
   }
 }
 .main {
@@ -185,6 +267,13 @@ The designs were created to the following widths:
   color: var(--DarkGrayishBlue);
   font-size: 1.1em;
 }
+.title__workflow {
+  text-align: center;
+  color: var(--DarkGrayishBlue);
+  font-size: 1.1em;
+  display: block;
+  margin: auto;
+}
 
 .copy__p_landing {
   text-align: center;
@@ -210,13 +299,21 @@ The designs were created to the following widths:
   padding: 0 0.5em;
 }
 
-@media (min-width: 500px) {
+.copy__p__workflow {
+  text-align: center;
+  color: var(--GrayishBlue);
+  font-size: 0.88em;
+  line-height: 1.4em;
+  text-align: center;
+  font-size: em;
+}
+
+@media (min-width: 768px) {
   .main {
     display: block;
     margin: auto;
     min-width: 100vw;
     max-width: 100vw;
-    border: solid 3px black;
   }
 
   .wapper {
@@ -248,6 +345,13 @@ The designs were created to the following widths:
     text-align: left;
     font-size: 1.45em;
   }
+  .title__workflow {
+    text-align: center;
+    color: var(--DarkGrayishBlue);
+    font-size: 1.35em;
+    display: block;
+    margin: auto;
+  }
 
   .copy__p_landing {
     text-align: center;
@@ -275,9 +379,16 @@ The designs were created to the following widths:
     padding: 0 0.5em;
   }
 
+  .copy__p__workflow {
+    text-align: center;
+    color: var(--GrayishBlue);
+    font-size: 0.88em;
+    line-height: 1.4em;
+    text-align: center;
+    font-size: 1em;
+  }
+
   .boton {
-    border: solid yellowgreen 2px;
-    border: blue solid 3px;
     padding: 2em 25em 5em 25em;
     display: flex;
     justify-content: space-between;

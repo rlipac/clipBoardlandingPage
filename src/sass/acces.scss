@@ -1,0 +1,45 @@
+// .acces-clipboard{
+//  // display: none;
+//   border: solid red 3px;
+ 
+
+// }
+.wapper2{
+  //border:solid green 3px;
+  margin: 0 1.6em;
+}
+
+.images{
+ // border: solid blue 3px;
+  display: block;
+  margin: auto;
+  padding: 3em 0;
+ 
+  &__large{
+    display:none;
+  }
+  &__small{
+    padding: 0;
+    display: block;
+    margin: auto;
+    width: 97%;
+
+  }
+}
+@media(min-width:7680px){
+  .acces-clipboard{
+  //  border: solid blue 10px;
+    padding: 3em;
+  }
+  .images{
+    &__small{
+      display: none;
+    }
+    &__large{
+      padding: 0;
+      display: block;
+      margin: auto;
+      width: 97%;
+    }
+  }
+}

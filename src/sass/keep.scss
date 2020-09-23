@@ -1,5 +1,7 @@
 .keep{
-  //border:solid peru 3px;
+   // display: none;
+ // border:solid peru 3px;
+  padding:3em 0;
   &__mobile{
    // border:solid 2px blue;
     display: block;
@@ -27,7 +29,7 @@
 
 }
 
-@media (min-width:500px){
+@media (min-width:768px){
  
   .keep{
    // border:solid green 8px;
