@@ -7,7 +7,7 @@
   padding-bottom: 4em;
      &__fondo{
         background:url("../../public/images/bg-header-mobile.png")center no-repeat;
-        background-size:399px;
+        background-size:499px;
         box-shadow: 0px -20px 20px inset #fafafa;
 
         //border: black 7px solid;
@@ -29,7 +29,7 @@
  }
 
 
- @media (min-width:400px){
+ @media (min-width:500px){
   .landing{
     display:block;
     &__fondo{
@@ -56,14 +56,10 @@
     }
 
   }
+  
 }
-.boton{
- // border: blue solid 3px;
-  padding: 2em 25em 5em 25em;
-  display: flex;
-  justify-content: space-between;
 
-}
+
 
 //  // primer imagen de fondo center: pára centrar, no-repeeat.: para no repetir y bottom:para que empiece desde abajo , seunda imagen de fondo de tras
 //  background:url('/static/images/image-mockups.png')center bottom no-repeat, url('/static/images/bg-intro-mobile.svg')center no-repeat;
