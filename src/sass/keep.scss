@@ -1,0 +1,78 @@
+.keep{
+  //border:solid peru 3px;
+  &__mobile{
+   // border:solid 2px blue;
+    display: block;
+    margin:auto;
+    padding:3em 0 2em 0;
+  }
+  padding: 4em 0;
+  &__items{
+//border:solid 2px red;
+
+    &__pc{
+      display: none;
+
+    }
+    &__articles{
+    
+        &__item{
+          //border: solid 2px yellowgreen;
+          margin: 0em 0;
+          padding: 0 0 2em 0;
+        }
+    
+    }
+  }
+
+}
+
+@media (min-width:500px){
+ 
+  .keep{
+   // border:solid green 8px;
+   padding: 1em 0;
+    display: block;
+    margin: auto;
+    &__mobile{
+      display: none;
+    }
+    &__items{
+     // border: solid blueviolet 10px;
+      padding: 0px;
+      min-width: 100vw;
+      display: flex;
+      justify-content:space-betwen;
+      
+    
+      &__pc{
+    
+        width: 55%;
+        display: inline-block;
+        &__image{
+          position: relative;
+          left: -2.9em;
+          width: 98%;
+          height: auto;
+        }
+
+      }
+      &__articles{
+       // border:solid blue 1px;
+        width: 45%;
+        &__item{
+          //border:solid 7px red;
+          margin: 5em 0;
+          padding: 0 0 0 2em;
+          width: 60%;
+
+        }
+       
+      }
+    }
+  
+  }
+}
+
+
+

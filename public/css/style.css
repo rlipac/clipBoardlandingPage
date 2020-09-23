@@ -31,17 +31,18 @@ The designs were created to the following widths:
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .landing {
-  display: none;
-  border: solid blue 4px;
   max-height: 100vh;
   max-width: 100vw;
   padding-bottom: 4em;
 }
 .landing__fondo {
-  background: url("../../public/images/bg-header-mobile.png") no-repeat;
+  background: url("../../public/images/bg-header-mobile.png") center no-repeat;
+  background-size: 399px;
+  box-shadow: 0px -20px 20px inset #fafafa;
 }
 .landing__fondo__logo {
   width: 14vh;
@@ -49,47 +50,102 @@ The designs were created to the following widths:
   margin: auto;
   padding: 6.6em 0 3em 0;
 }
+.landing__article {
+  margin: 1em 0;
+}
 
-@media (min-width: 760px) {
+@media (min-width: 400px) {
   .landing {
     display: block;
-    border: solid 3px black;
   }
   .landing__fondo {
     background: url("../../public/images/bg-header-Desktop.png") no-repeat;
     background-size: cover;
+    box-shadow: 0px -100px 100px inset #fafafa;
   }
   .landing__fondo__logo {
-    width: 14vh;
+    width: 18vh;
     display: block;
     margin: auto;
-    padding: 6.6em 0 3em 0;
+    padding: 9em 0 4em 0;
+  }
+  .landing__article {
+    width: 51vw;
+    display: block;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 2em;
   }
 }
+.boton {
+  padding: 2em 25em 5em 25em;
+  display: flex;
+  justify-content: space-between;
+}
+
 .keep {
-  border: solid peru 3px;
   padding: 4em 0;
 }
-.keep__pc_mobile {
-  max-width: 100%;
-  min-width: 100%;
-  margin: 3em 0;
+.keep__mobile {
+  display: block;
+  margin: auto;
+  padding: 3em 0 2em 0;
+}
+.keep__items__pc {
+  display: none;
 }
 .keep__items__articles__item {
   margin: 0em 0;
   padding: 0 0 2em 0;
 }
 
+@media (min-width: 500px) {
+  .keep {
+    padding: 1em 0;
+    display: block;
+    margin: auto;
+  }
+  .keep__mobile {
+    display: none;
+  }
+  .keep__items {
+    padding: 0px;
+    min-width: 100vw;
+    display: flex;
+    justify-content: space-betwen;
+  }
+  .keep__items__pc {
+    width: 55%;
+    display: inline-block;
+  }
+  .keep__items__pc__image {
+    position: relative;
+    left: -2.9em;
+    width: 98%;
+    height: auto;
+  }
+  .keep__items__articles {
+    width: 45%;
+  }
+  .keep__items__articles__item {
+    margin: 5em 0;
+    padding: 0 0 0 2em;
+    width: 60%;
+  }
+}
 .main {
-  border: solid red 2px;
   max-width: 100vw;
   background-color: #fafafa;
 }
 
 .wapper {
+  border: solid 1px yellowgreen;
   margin: 0 1.6em;
 }
 
+.boton {
+  border: solid 2px red;
+}
 .boton__ios {
   font-family: "Bai Jamjuree", sans-serif;
   display: block;
@@ -128,16 +184,13 @@ The designs were created to the following widths:
 .title__h2 {
   text-align: center;
   color: var(--DarkGrayishBlue);
+  margin-bottom: 1em;
   font-size: 1.6em;
 }
 .title__h3 {
   text-align: center;
   color: var(--DarkGrayishBlue);
   font-size: 1.1em;
-}
-
-.article {
-  margin: 1em 0;
 }
 
 .copy__p_landing {
@@ -164,9 +217,99 @@ The designs were created to the following widths:
   padding: 0 0.5em;
 }
 
-@media (min-width: 760px) {
+@media (min-width: 400px) {
   .main {
-    border: solid 3px black;
+    display: block;
+    margin: auto;
+    min-width: 100vw;
+    max-width: 100vw;
+  }
+
+  .wapper {
+    margin: 0em 0em;
+    padding: 0em 0em;
+  }
+
+  .article {
+    width: 48vw;
+    display: block;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 4.5em;
+  }
+
+  .title__h1 {
+    text-align: center;
+    color: var(--DarkGrayishBlue);
+    font-size: 2.8em;
+  }
+  .title__h2 {
+    text-align: center;
+    color: var(--DarkGrayishBlue);
+    font-size: 2.1em;
+  }
+  .title__h3 {
+    text-align: center;
+    color: var(--DarkGrayishBlue);
+    text-align: left;
+    font-size: 1.45em;
+  }
+
+  .copy__p_landing {
+    text-align: center;
+    color: var(--GrayishBlue);
+    font-size: 0.88em;
+    line-height: 1.4em;
+    font-size: 1.3em;
+  }
+  .copy__p_keep {
+    text-align: center;
+    color: var(--GrayishBlue);
+    font-size: 0.88em;
+    line-height: 1.4em;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.6em;
+  }
+  .copy__p_keep__2 {
+    text-align: center;
+    color: var(--GrayishBlue);
+    font-size: 0.88em;
+    line-height: 1.4em;
+    text-align: left;
+    font-size: 1em;
+    padding: 0 0.5em;
+  }
+
+  .boton__ios {
+    font-family: "Bai Jamjuree", sans-serif;
+    display: block;
+    margin: auto;
+    border-radius: 30px;
+    color: white;
+    padding: 1em 5.2em;
+    font-size: 0.9em;
+    font-weight: 600;
+    border: none;
+    padding: 0.8em 2.7em;
+    font-size: 1.2em;
+    background-color: var(--StronCyan);
+    box-shadow: -0.1px 10px 40px -19px var(--StronCyan);
+  }
+  .boton__mac {
+    font-family: "Bai Jamjuree", sans-serif;
+    display: block;
+    margin: auto;
+    border-radius: 30px;
+    color: white;
+    padding: 1em 5.2em;
+    font-size: 0.9em;
+    font-weight: 600;
+    border: none;
+    padding: 0.8em 2.7em;
+    font-size: 1.2em;
+    background-color: var(--LightBlue);
+    box-shadow: -0.1px 10px 40px -19px var(--LightBlue);
   }
 }
 
