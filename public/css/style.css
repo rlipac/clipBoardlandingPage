@@ -77,6 +77,11 @@ The designs were created to the following widths:
     margin-bottom: 2em;
   }
 }
+@media (min-width: 768px) {
+  .landing__article {
+    width: 57vw;
+  }
+}
 .keep {
   padding: 3em 0;
   padding: 4em 0;
@@ -147,7 +152,7 @@ The designs were created to the following widths:
   width: 97%;
 }
 
-@media (min-width: 7680px) {
+@media (min-width: 768px) {
   .acces-clipboard {
     padding: 3em;
   }
@@ -159,7 +164,7 @@ The designs were created to the following widths:
     padding: 0;
     display: block;
     margin: auto;
-    width: 97%;
+    width: 65vw;
   }
 }
 .items-images {
@@ -309,6 +314,113 @@ The designs were created to the following widths:
 }
 
 @media (min-width: 768px) {
+  .article {
+    width: 48vw;
+    display: block;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 4.5em;
+    border: solid red 2px;
+  }
+
+  .title__h1 {
+    text-align: center;
+    color: var(--DarkGrayishBlue);
+    font-size: 2.1em;
+  }
+  .title__h2 {
+    text-align: center;
+    color: var(--DarkGrayishBlue);
+    font-size: 2.1em;
+  }
+  .title__h3 {
+    text-align: center;
+    color: var(--DarkGrayishBlue);
+    text-align: left;
+    font-size: 1.45em;
+  }
+  .title__workflow {
+    text-align: center;
+    color: var(--DarkGrayishBlue);
+    font-size: 1.35em;
+    display: block;
+    margin: auto;
+  }
+
+  .copy__p_landing {
+    text-align: center;
+    color: var(--GrayishBlue);
+    font-size: 0.88em;
+    line-height: 1.4em;
+    font-size: 1em;
+  }
+  .copy__p_keep {
+    text-align: center;
+    color: var(--GrayishBlue);
+    font-size: 0.88em;
+    line-height: 1.4em;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.6em;
+  }
+  .copy__p_keep__2 {
+    text-align: center;
+    color: var(--GrayishBlue);
+    font-size: 0.88em;
+    line-height: 1.4em;
+    text-align: left;
+    font-size: 1em;
+    padding: 0 0.5em;
+  }
+
+  .boton {
+    border: solid yellowgreen 2px;
+    padding: 2em 6em 5em 6em;
+    display: flex;
+    justify-content: space-between;
+  }
+  .boton__ios {
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 0.8em 2em;
+    font-size: 1em;
+    background-color: var(--StronCyan);
+    box-shadow: -0.1px 10px 40px -19px var(--StronCyan);
+  }
+  .boton__mac {
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 0.8em 2em;
+    font-size: 1em;
+    background-color: var(--LightBlue);
+    box-shadow: -0.1px 10px 40px -19px var(--LightBlue);
+  }
+}
+@media (min-width: 820px) {
+  .boton {
+    border: solid yellowgreen 2px;
+    padding: 2em 8em 5em 8em;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 950px) {
+  .boton {
+    border: solid yellowgreen 2px;
+    padding: 2em 11em 5em 11em;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1024px) {
   .main {
     display: block;
     margin: auto;
@@ -389,7 +501,7 @@ The designs were created to the following widths:
   }
 
   .boton {
-    padding: 2em 25em 5em 25em;
+    padding: 2em 12em 5em 12em;
     display: flex;
     justify-content: space-between;
   }
@@ -416,6 +528,20 @@ The designs were created to the following widths:
     font-size: 1.2em;
     background-color: var(--LightBlue);
     box-shadow: -0.1px 10px 40px -19px var(--LightBlue);
+  }
+}
+@media (min-width: 1200px) {
+  .boton {
+    padding: 2em 18em 5em 18em;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1300px) {
+  .boton {
+    padding: 2em 24em 5em 24em;
+    display: flex;
+    justify-content: space-between;
   }
 }
 

@@ -58,6 +58,14 @@
   }
   
 }
+@media (min-width:768px){
+  .landing{
+    &__article{
+//border: solid blue 2px;
+      width: 57vw;
+    }
+  }
+}
 
 
 

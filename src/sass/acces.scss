@@ -26,9 +26,9 @@
 
   }
 }
-@media(min-width:7680px){
+@media(min-width:768px){
   .acces-clipboard{
-  //  border: solid blue 10px;
+  // border: solid blue 10px;
     padding: 3em;
   }
   .images{
@@ -39,7 +39,8 @@
       padding: 0;
       display: block;
       margin: auto;
-      width: 97%;
+      width: 65vw;
+     // border: solid blue 10px;
     }
   }
 }
