@@ -1,9 +1,9 @@
-// .acces-clipboard{
-//  // display: none;
-//   border: solid red 3px;
+.acces-clipboard{
+ padding: 3em 0;
+  border: solid red 3px;
  
 
-// }
+}
 .wapper2{
   //border:solid green 3px;
   margin: 0 1.6em;
@@ -13,7 +13,7 @@
  // border: solid blue 3px;
   display: block;
   margin: auto;
-  padding: 3em 0;
+  padding-top: 3em ;
  
   &__large{
     display:none;

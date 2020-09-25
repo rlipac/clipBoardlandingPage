@@ -35,6 +35,7 @@ The designs were created to the following widths:
 }
 
 .landing {
+  border: solid blue 4px;
   max-height: 100vh;
   max-width: 100vw;
   padding-bottom: 4em;
@@ -83,6 +84,7 @@ The designs were created to the following widths:
   }
 }
 .keep {
+  border: solid peru 3px;
   padding: 3em 0;
   padding: 4em 0;
 }
@@ -128,11 +130,34 @@ The designs were created to the following widths:
     width: 45%;
   }
   .keep__items__articles__item {
-    margin: 5em 0;
+    margin: 1em 0;
     padding: 0 0 0 2em;
     width: 60%;
   }
+
+  .article-keep {
+    width: 48vw;
+    display: block;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 4.5em;
+  }
 }
+@media (min-width: 1024px) {
+  .keep__items__articles__item {
+    margin: 2em 0;
+  }
+}
+@media (min-width: 1300px) {
+  .keep__items__articles__item {
+    margin: 5em 0;
+  }
+}
+.acces-clipboard {
+  padding: 3em 0;
+  border: solid red 3px;
+}
+
 .wapper2 {
   margin: 0 1.6em;
 }
@@ -140,7 +165,7 @@ The designs were created to the following widths:
 .images {
   display: block;
   margin: auto;
-  padding: 3em 0;
+  padding-top: 3em;
 }
 .images__large {
   display: none;
@@ -167,6 +192,11 @@ The designs were created to the following widths:
     width: 65vw;
   }
 }
+.workflow {
+  padding: 3em 0;
+  border: solid 2px green;
+}
+
 .items-images {
   display: block;
   margin: auto;
@@ -179,10 +209,6 @@ The designs were created to the following widths:
 }
 
 @media (min-width: 768px) {
-  .workflow {
-    padding: 3em 0;
-  }
-
   .container {
     display: block;
     margin: auto;
@@ -214,6 +240,101 @@ The designs were created to the following widths:
     text-align: center;
   }
 }
+.clipboard {
+  padding: 3em 0;
+}
+
+.footer {
+  padding: 2em 0;
+  border: solid black 4px;
+  background: #f5f7f9;
+  display: block;
+  margin: auto;
+}
+.footer__container {
+  border: solid peru 4px;
+  display: flex;
+  flex-direction: column;
+}
+.footer__container__logo {
+  border: solid 2px yellowgreen;
+}
+.footer__container__logo__image {
+  padding: 2em 0;
+  display: block;
+  margin: auto;
+  width: 14vw;
+}
+.footer__container__items {
+  border: solid 8px yellow;
+  display: block;
+  margin: auto;
+}
+.footer__container__items__links {
+  border: solid 2px red;
+}
+.footer__container__redes {
+  border: solid 4px yellowgreen;
+  margin: 2em 0 0 0;
+  padding: 0vw 24vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-link {
+  display: block;
+  margin: auto;
+  color: var(--DarkGrayishBlue);
+  text-decoration: none;
+  font-size: 0.85em;
+  text-align: center;
+  font-weight: 600;
+  margin: 1em 0;
+  border: solid blue 2px;
+}
+
+.footer-images {
+  border: solid 2px blue;
+}
+.footer-images__img {
+  border: solid 2px yellowgreen;
+}
+
+@media (min-width: 768px) {
+  .footer__container {
+    border: solid blue 10px;
+    flex-direction: row;
+  }
+  .footer__container__logo {
+    max-width: 20vw;
+    border: solid 2px yellowgreen;
+  }
+  .footer__container__logo__image {
+    padding: 5em 0;
+    width: 10vw;
+  }
+  .footer__container__items {
+    border: solid 8px yellow;
+    display: flex;
+    flex-direction: row;
+  }
+  .footer__container__items__links {
+    display: inline-block;
+    border: solid 2px red;
+  }
+  .footer__container__redes {
+    border: solid 4px yellowgreen;
+    margin: 2em 0 0 0;
+    padding: 0vw 24vw;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footer-link {
+    display: flex;
+    border: solid red 2px;
+  }
+}
 .main {
   max-width: 100vw;
   background-color: #fafafa;
@@ -233,8 +354,8 @@ The designs were created to the following widths:
   margin: auto;
   border-radius: 30px;
   color: white;
-  padding: 1em 5.5em;
-  font-weight: 600;
+  padding: 0.9em 5.5em;
+  font-weight: 300;
   border: none;
   background-color: var(--StronCyan);
   font-size: 0.88em;
@@ -247,8 +368,8 @@ The designs were created to the following widths:
   margin: auto;
   border-radius: 30px;
   color: white;
-  padding: 1em 5.5em;
-  font-weight: 600;
+  padding: 0.9em 5.5em;
+  font-weight: 300;
   border: none;
   background-color: var(--LightBlue);
   font-size: 0.88em;
@@ -314,15 +435,6 @@ The designs were created to the following widths:
 }
 
 @media (min-width: 768px) {
-  .article {
-    width: 48vw;
-    display: block;
-    margin: auto;
-    margin-top: 1em;
-    margin-bottom: 4.5em;
-    border: solid red 2px;
-  }
-
   .title__h1 {
     text-align: center;
     color: var(--DarkGrayishBlue);
@@ -374,7 +486,6 @@ The designs were created to the following widths:
   }
 
   .boton {
-    border: solid yellowgreen 2px;
     padding: 2em 6em 5em 6em;
     display: flex;
     justify-content: space-between;
@@ -384,7 +495,7 @@ The designs were created to the following widths:
     margin: auto;
     border-radius: 20px;
     color: white;
-    font-weight: 600;
+    font-weight: 300;
     border: none;
     padding: 0.8em 2em;
     font-size: 1em;
@@ -396,7 +507,7 @@ The designs were created to the following widths:
     margin: auto;
     border-radius: 20px;
     color: white;
-    font-weight: 600;
+    font-weight: 300;
     border: none;
     padding: 0.8em 2em;
     font-size: 1em;
@@ -406,7 +517,6 @@ The designs were created to the following widths:
 }
 @media (min-width: 820px) {
   .boton {
-    border: solid yellowgreen 2px;
     padding: 2em 8em 5em 8em;
     display: flex;
     justify-content: space-between;
@@ -414,7 +524,6 @@ The designs were created to the following widths:
 }
 @media (min-width: 950px) {
   .boton {
-    border: solid yellowgreen 2px;
     padding: 2em 11em 5em 11em;
     display: flex;
     justify-content: space-between;
@@ -510,7 +619,7 @@ The designs were created to the following widths:
     margin: auto;
     border-radius: 30px;
     color: white;
-    font-weight: 600;
+    font-weight: 300;
     border: none;
     padding: 0.8em 2.7em;
     font-size: 1.2em;
@@ -522,7 +631,7 @@ The designs were created to the following widths:
     margin: auto;
     border-radius: 30px;
     color: white;
-    font-weight: 600;
+    font-weight: 300;
     border: none;
     padding: 0.8em 2.7em;
     font-size: 1.2em;
@@ -532,12 +641,19 @@ The designs were created to the following widths:
 }
 @media (min-width: 1200px) {
   .boton {
-    padding: 2em 18em 5em 18em;
+    padding: 2em 15em 5em 15em;
     display: flex;
     justify-content: space-between;
   }
 }
 @media (min-width: 1300px) {
+  .boton {
+    padding: 2em 18em 5em 18em;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1400px) {
   .boton {
     padding: 2em 24em 5em 24em;
     display: flex;

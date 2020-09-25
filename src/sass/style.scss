@@ -42,6 +42,8 @@ The designs were created to the following widths:
 @import './keep.scss';
 @import './acces.scss';
 @import './workflow.scss';
+@import './clipboard.scss';
+@import './footer.scss';
 
 
 
@@ -74,8 +76,8 @@ The designs were created to the following widths:
      margin:auto;
      border-radius: 30px;
      color: white;
-     padding:1em 5.5em;
-     font-weight: 600;
+     padding:.9em 5.5em;
+     font-weight: 300;
      border: none;
     }
     .boton{
@@ -161,14 +163,7 @@ The designs were created to the following widths:
 
 
 @media (min-width: 768px){
-  .article{
-    width: 48vw;
-    display: block;
-    margin: auto;
-    margin-top: 1em;
-    margin-bottom: 4.5em;
-    border: solid red 2px;
-  }
+ 
   .title {
     &__h1{
       @include title;
@@ -222,11 +217,11 @@ The designs were created to the following widths:
     margin:auto;
     border-radius: 20px;
     color: white;
-    font-weight: 600;
+    font-weight: 300;
     border: none;
    }
   .boton{
-    border:solid yellowgreen 2px;
+   // border:solid yellowgreen 2px;
     padding: 2em 6em 5em 6em;
     display: flex;
     justify-content: space-between;
@@ -252,7 +247,7 @@ The designs were created to the following widths:
 }
 @media (min-width:820px){
   .boton{
-    border:solid yellowgreen 2px;
+   // border:solid yellowgreen 2px;
     padding: 2em 8em 5em 8em;
     display: flex;
     justify-content: space-between;
@@ -260,7 +255,7 @@ The designs were created to the following widths:
 }
 @media (min-width:950px){
   .boton{
-    border:solid yellowgreen 2px;
+   // border:solid yellowgreen 2px;
     padding: 2em 11em 5em 11em;
     display: flex;
     justify-content: space-between;
@@ -303,7 +298,7 @@ The designs were created to the following widths:
    margin:auto;
    border-radius: 30px;
    color: white;
-   font-weight: 600;
+   font-weight: 300;
    border: none;
   }
   .title {
@@ -396,9 +391,9 @@ The designs were created to the following widths:
 
 @media(min-width:1200px){
   .boton{
-    // border:solid yellowgreen 2px;
+  //border:solid red 2px;
     // border: blue solid 3px;
-    padding: 2em 18em 5em 18em;
+    padding: 2em 15em 5em 15em;
     display: flex;
     justify-content: space-between;
   }
@@ -407,8 +402,18 @@ The designs were created to the following widths:
   .boton{
     // border:solid yellowgreen 2px;
     // border: blue solid 3px;
+    padding: 2em 18em 5em 18em;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media(min-width:1400px){
+  .boton{
+    // border:solid yellowgreen 2px;
+    // border: blue solid 3px;
     padding: 2em 24em 5em 24em;
     display: flex;
     justify-content: space-between;
   }
 }
+
